@@ -190,7 +190,7 @@ used by model B). Coordinates are in world mm.
 @inproceedings{TODO,
   title     = {TODO},
   author    = {TODO},
-  booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI)},
+  booktitle = {TODO},
   year      = {2027}
 }
 ```
