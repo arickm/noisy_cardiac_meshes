@@ -1,0 +1,11 @@
+# models A and B (Python 3.10, CUDA 11.8)
+# torch first:   pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu118
+# then kaolin:   pip install kaolin==0.16.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.4.0_cu118.html
+numpy==1.26.4
+scipy==1.14.1
+nibabel==5.2.1
+monai==1.4.0
+pyvista==0.44.1
+vtk==9.3.1
+# optional, for --wandb_project
+# wandb

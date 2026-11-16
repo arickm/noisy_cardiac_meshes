@@ -1,0 +1,50 @@
+{
+  "model": "A",
+  "seed": 3,
+  "epochs": 750,
+  "batch_size": 1,
+  "num_workers": 4,
+  "optimizer": {
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "lr_scheduler": {
+    "factor": 0.5,
+    "patience": 3
+  },
+  "grad_clip_norm": 5.0,
+  "validate_every": 25,
+  "patch_size": [128, 128, 128],
+  "intensity_window": [-100, 600],
+  "network": {
+    "encoder_channels": [8, 16, 32, 64, 128],
+    "decoder_channels": [64, 32, 16, 8],
+    "dropout": 0.1
+  },
+  "deformation": {
+    "cp_spacing": [3, 3, 3],
+    "bspline_order": 3,
+    "integration_steps": 5
+  },
+  "augmentation": {
+    "affine_prob": 0.5,
+    "rotate_range_degree": [25, 25, 25],
+    "shear_range": [0, 0, 0],
+    "translate_range": [10, 10, 10],
+    "scale_range": [0.1, 0.1, 0.1],
+    "intensity_prob": 0.5,
+    "contrast_range": [0.8, 1.2],
+    "noise_std": 0.05,
+    "gaussian_smooth_sigma": [0.5, 1.5]
+  },
+  "loss": {
+    "n_sample_points": 50000,
+    "weights": {
+      "chamfer": 4.0,
+      "cosine": 0.01,
+      "laplacian": 1.0,
+      "normal_consistency": 0.001,
+      "edge": 5.0
+    }
+  }
+}
