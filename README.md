@@ -1,11 +1,5 @@
 # Noisy cardiac meshes
 
-Code of the ISBI 2027 paper
-
-> **TITLE** (TODO)<br>
-> AUTHORS (TODO)<br>
-> IEEE International Symposium on Biomedical Imaging (ISBI), 2027
-
 Do template-deformation networks resist label noise better than voxel segmentation? We train three mesh
 models and nnU-Net on left-ventricle (LV) myocardium labels with controlled errors. Each error comes as a
 **biased** version (the same mistake in every corrupted case) and an **unbiased** version (random mistakes
